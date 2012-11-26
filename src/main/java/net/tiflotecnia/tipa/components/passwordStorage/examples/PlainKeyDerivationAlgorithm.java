@@ -3,6 +3,8 @@
  */
 package net.tiflotecnia.tipa.components.passwordStorage.examples;
 
+import com.typesafe.config.Config;
+
 import net.tiflotecnia.tipa.components.passwordStorage.AbstractKeyDerivationAlgorithm;
 
 /**
@@ -12,6 +14,10 @@ import net.tiflotecnia.tipa.components.passwordStorage.AbstractKeyDerivationAlgo
  *
  */
 public class PlainKeyDerivationAlgorithm extends AbstractKeyDerivationAlgorithm {
+
+	protected PlainKeyDerivationAlgorithm(Config config) {
+		super(config);
+	}
 
 	@Override
 	protected String generateKey(String password) {
