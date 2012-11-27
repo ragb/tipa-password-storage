@@ -15,7 +15,7 @@ import net.tiflotecnia.tipa.components.passwordStorage.AbstractKeyDerivationAlgo
  */
 public class PlainKeyDerivationAlgorithm extends AbstractKeyDerivationAlgorithm {
 
-	protected PlainKeyDerivationAlgorithm(Config config) {
+	public PlainKeyDerivationAlgorithm(Config config) {
 		super(config);
 	}
 
