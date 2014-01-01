@@ -14,6 +14,21 @@ For now only "scryt" algorithm is supported, however new algorithms can be added
 * Sbt (for building)
 * scrypt java implementation, typesafe config and scala test all pulled from maven repositories).
 
+## Example Usage
+
+Usage with default parameters, and script algorithm.
+
+(This is Scala code)
+
+```scala
+import net.tiflotecnia.tipa.components.passwordStorage._
+
+val kd = new KeyDerivator
+val key = kd.deriveKey("password")
+assert(kd.check("password", key))
+```
+
+
 ## Authors
 
 * Rui Batista <ruiandrebatista@gmail.com> (Tiflotecnia, Lda.)
